@@ -1,0 +1,16 @@
+{
+  "name": "twinsstore",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Dima Artemchuk <taruuuch@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "client": "yarn --cwd client start",
+    "server": "yarn --cwd server nodemon -q server.js",
+    "dev": "concurrently \"yarn server\" \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.2"
+  }
+}
